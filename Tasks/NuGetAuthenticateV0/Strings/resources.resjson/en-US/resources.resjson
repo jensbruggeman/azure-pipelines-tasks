@@ -1,0 +1,9 @@
+{
+  "loc.friendlyName": "NuGet Authenticate",
+  "loc.helpMarkDown": "[Learn more about this task]({FWLINK HERE})",
+  "loc.description": "Sets up Azure DevOps authentication for nuget.exe (and msbuild for .NET Framework)",
+  "loc.instanceNameFormat": "Set up NuGet.exe authentication",
+  "loc.input.label.externalEndpoints": "Service connection credentials for feeds outside this organization",
+  "loc.input.help.externalEndpoints": "Service connection credentials for feeds outside this organization/collection. For feeds in this organization/collection, leave this blank; the build’s credentials are used automatically.",
+  "loc.messages.dsf": "sdf"
+}

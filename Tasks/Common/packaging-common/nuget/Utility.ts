@@ -179,6 +179,14 @@ export function locateCredentialProvider(useV2CredProvider?: boolean): string {
     }
 }
 
+export function locateV2DotnetCredentialProvider(): string {
+    let taskNodeModulesPath: string = path.dirname(path.dirname(__dirname));
+    let taskRootPath: string = path.dirname(taskNodeModulesPath);
+
+    // tslint:disable-next-line:max-line-length
+    return path.join(taskRootPath, "CredentialProviderV2/plugins/netcore/CredentialProvider.Microsoft/CredentialProvider.Microsoft.dll");
+}
+
 // set the console code page to "UTF-8"
 export function setConsoleCodePage() {
     if (tl.osType() === "Windows_NT") {

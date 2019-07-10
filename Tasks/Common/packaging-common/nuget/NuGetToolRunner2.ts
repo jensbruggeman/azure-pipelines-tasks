@@ -450,6 +450,8 @@ export function getProxyBypassForConfig(configFile: string): string {
     return undefined;
 }
 
+// Similar to the newer CredentialProviderUtilities.buildExternalFeedEndpointsJson,
+// but this one silently continues on ApiKey based service connections instead of failing.
 function buildCredentialJson(authInfo: auth.NuGetExtendedAuthInfo): string {
     if (authInfo && authInfo.externalAuthInfo) {
         let enpointCredentialsJson: EnpointCredentialsContainer = {

@@ -124,7 +124,7 @@ export function getSystemAccessToken(): string {
     }
 }
 
-function getAreaIdForProtocol(protocolType: ProtocolType): string {
+export function getAreaIdForProtocol(protocolType: ProtocolType): string {
     switch (protocolType) {
         case ProtocolType.Maven:
             return '6F7F8C07-FF36-473C-BCF3-BD6CC9B6C066';
